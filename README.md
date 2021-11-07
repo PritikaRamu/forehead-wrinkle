@@ -21,5 +21,5 @@ SSIM stands for Structural Similarity Index.  It is a metric that quantifies the
 ## Results
 ArcFace performs the best with the given data. The results are good since it used pre-trained weights and parameters to extract facial features from the image.  The similarity scores calculated were 1-(cosine distance between two images). SSIM also performed relatively well due to the similarity in position and lighting of the images comapared. Since SSIM does not extractthe features, rather compares the image data the way it is, it is not reliable with varying camera angles, lighting, contrast, etc. Since we performed appropriate image enhancements, the lighting and contrast of the compared images were similar. The reason for the large number of 0s in the histograms of ORB, AKAZE and BRISK is due to the lack of features extracted by the feature extractor.  This is due to the presence of blurry images in the dataset. The Contrast Limited Adaptive Histogram Equalization gave marginally better results for all the feature extractors than regular equilization.
 
-![Results Table](/assets/table.png "Results table")
-![ROC curves](/assets/roc.png "ROC curves")
+![Results Table](/table.png "Results table")
+![ROC curves](/roc.png "ROC curves")
